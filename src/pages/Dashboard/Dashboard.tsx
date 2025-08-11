@@ -1,7 +1,12 @@
+import {Layout} from "../../components/Layout.tsx";
+import {DashboardHead} from "./DashboardHead.tsx";
+import {DashboardMain} from "./DashboardMain.tsx";
+
 export const Dashboard = () => {
     return (
-        <div className={'text-green-500 text-[50px]'}>
-            Hello, It's Dashboard
-        </div>
+        <Layout>
+            <DashboardHead/>
+            <DashboardMain/>
+        </Layout>
     );
 };
